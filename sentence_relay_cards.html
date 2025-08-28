@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentence Relay Race - Word Cards</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f0f8ff;
+            print-color-adjust: exact;
+            -webkit-print-color-adjust: exact;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .instructions {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .instructions h3 {
+            color: #856404;
+            margin-top: 0;
+        }
+
+        .card-section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #495057;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 2px;
+            margin-bottom: 30px;
+        }
+
+        .word-card {
+            width: 100px;
+            height: 100px;
+            border: 2px solid #333;
+            border-radius: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+            background: white;
+            page-break-inside: avoid;
+            box-shadow: none;
+        }
+
+        .word-card.noun {
+            background: #ffe6e6;
+            border-color: #ff4757;
+            color: #2f3640;
+        }
+
+        .word-card.verb {
+            background: #e6f3ff;
+            border-color: #3742fa;
+            color: #2f3640;
+        }
+
+        .word-card.adjective {
+            background: #e6ffe6;
+            border-color: #2ed573;
+            color: #2f3640;
+        }
+
+        .word-card.other {
+            background: #fff9e6;
+            border-color: #ffa502;
+            color: #2f3640;
+        }
+
+        .word-card.question {
+            background: #f3e6ff;
+            border-color: #a55eea;
+            color: #2f3640;
+        }
+
+        .punctuation {
+            background: #f1f2f6;
+            border-color: #57606f;
+            font-size: 1.5rem;
+        }
+
+        .sample-sentences {
+            background: #d1ecf1;
+            border: 2px solid #bee5eb;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .sample-sentences h3 {
+            color: #0c5460;
+            margin-top: 0;
+        }
+
+        .sample-sentence {
+            background: white;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border-left: 4px solid #17a2b8;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            
+            .instructions {
+                page-break-after: always;
+            }
+            
+            .card-section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🏃‍♂️ Sentence Relay Race 📝</h1>
+        <p>Grade 6 ESL - Word Cards to Cut Out</p>
+    </div>
+
+    <div class="instructions">
+        <h3>🎯 How to Play:</h3>
+        <p><strong>1.</strong> Cut out all the word cards below</p>
+        <p><strong>2.</strong> Mix them up and divide equally between teams</p>
+        <p><strong>3.</strong> Teams race to build grammatically correct sentences</p>
+        <p><strong>4.</strong> First team to make a correct sentence wins that round!</p>
+        <p><strong>5.</strong> Play multiple rounds with different sentence combinations</p>
+        
+        <h3>🌈 Color Code:</h3>
+        <p><span style="color: #ff4757;">🔴 Red = Nouns</span> | <span style="color: #3742fa;">🔵 Blue = Verbs</span> | <span style="color: #2ed573;">🟢 Green = Adjectives</span> | <span style="color: #ffa502;">🟡 Yellow = Other Words</span> | <span style="color: #a55eea;">🟣 Purple = Question Words</span></p>
+    </div>
+
+    <div class="card-section">
+        <div class="section-title">🔴 NOUNS (Things & People) - Make 13 Sets</div>
+        <div class="cards-grid">
+            <div class="word-card noun">cat</div>
+            <div class="word-card noun">cats</div>
+            <div class="word-card noun">dog</div>
+            <div class="word-card noun">dogs</div>
+            <div class="word-card noun">teacher</div>
+            <div class="word-card noun">student</div>
+            <div class="word-card noun">students</div>
+            <div class="word-card noun">book</div>
+            <div class="word-card noun">books</div>
+            <div class="word-card noun">pencil</div>
+            <div class="word-card noun">pencils</div>
+            <div class="word-card noun">mom</div>
+            <div class="word-card noun">dad</div>
+            <div class="word-card noun">friend</div>
+            <div class="word-card noun">friends</div>
+            <div class="word-card noun">school</div>
+            <div class="word-card noun">home</div>
+            <div class="word-card noun">park</div>
+            <div class="word-card noun">bike</div>
+            <div class="word-card noun">pizza</div>
+            <div class="word-card noun">lunch</div>
+            <div class="word-card noun">game</div>
+            <div class="word-card noun">toys</div>
+            <div class="word-card noun">computer</div>
+        </div>
+    </div>
+
+    <div class="card-section">
+        <div class="section-title">🔵 VERBS (Action Words) - Make 13 Sets</div>
+        <div class="cards-grid">
+            <div class="word-card verb">go</div>
+            <div class="word-card verb">goes</div>
+            <div class="word-card verb">went</div>
+            <div class="word-card verb">like</div>
+            <div class="word-card verb">likes</div>
+            <div class="word-card verb">liked</div>
+            <div class="word-card verb">play</div>
+            <div class="word-card verb">plays</div>
+            <div class="word-card verb">played</div>
+            <div class="word-card verb">eat</div>
+            <div class="word-card verb">eats</div>
+            <div class="word-card verb">ate</div>
+            <div class="word-card verb">have</div>
+            <div class="word-card verb">has</div>
+            <div class="word-card verb">had</div>
+            <div class="word-card verb">live</div>
+            <div class="word-card verb">lives</div>
+            <div class="word-card verb">lived</div>
+            <div class="word-card verb">am</div>
+            <div class="word-card verb">is</div>
+            <div class="word-card verb">are</div>
+            <div class="word-card verb">was</div>
+            <div class="word-card verb">were</div>
+            <div class="word-card verb">watch</div>
+        </div>
+    </div>
+
+    <div class="card-section">
+        <div class="section-title">🟢 ADJECTIVES (Describing Words) - Make 13 Sets</div>
+        <div class="cards-grid">
+            <div class="word-card adjective">big</div>
+            <div class="word-card adjective">small</div>
+            <div class="word-card adjective">happy</div>
+            <div class="word-card adjective">sad</div>
+            <div class="word-card adjective">nice</div>
+            <div class="word-card adjective">funny</div>
+            <div class="word-card adjective">red</div>
+            <div class="word-card adjective">blue</div>
+            <div class="word-card adjective">new</div>
+            <div class="word-card adjective">old</div>
+            <div class="word-card adjective">good</div>
+            <div class="word-card adjective">smart</div>
+            <div class="word-card adjective">tall</div>
+            <div class="word-card adjective">fast</div>
+            <div class="word-card adjective">cool</div>
+            <div class="word-card adjective">cute</div>
+        </div>
+    </div>
+
+    <div class="card-section">
+        <div class="section-title">🟡 OTHER WORDS (Articles, Pronouns, Prepositions) - Make 13 Sets</div>
+        <div class="cards-grid">
+            <div class="word-card other">I</div>
+            <div class="word-card other">you</div>
+            <div class="word-card other">he</div>
+            <div class="word-card other">she</div>
+            <div class="word-card other">we</div>
+            <div class="word-card other">they</div>
+            <div class="word-card other">my</div>
+            <div class="word-card other">your</div>
+            <div class="word-card other">his</div>
+            <div class="word-card other">her</div>
+            <div class="word-card other">our</div>
+            <div class="word-card other">their</div>
+            <div class="word-card other">a</div>
+            <div class="word-card other">an</div>
+            <div class="word-card other">the</div>
+            <div class="word-card other">to</div>
+            <div class="word-card other">at</div>
+            <div class="word-card other">in</div>
+            <div class="word-card other">on</div>
+            <div class="word-card other">with</div>
+            <div class="word-card other">for</div>
+            <div class="word-card other">very</div>
+            <div class="word-card other">today</div>
+            <div class="word-card other">yesterday</div>
+        </div>
+    </div>
+
+    <div class="card-section">
+        <div class="section-title">🟣 QUESTION WORDS & HELPERS - Make 13 Sets</div>
+        <div class="cards-grid">
+            <div class="word-card question">what</div>
+            <div class="word-card question">where</div>
+            <div class="word-card question">when</div>
+            <div class="word-card question">who</div>
+            <div class="word-card question">how</div>
+            <div class="word-card question">why</div>
+            <div class="word-card question">do</div>
+            <div class="word-card question">does</div>
+            <div class="word-card question">did</div>
+            <div class="word-card question">is</div>
+            <div class="word-card question">are</div>
+            <div class="word-card question">was</div>
+            <div class="word-card question">were</div>
+            <div class="word-card question">can</div>
+            <div class="word-card question">will</div>
+            <div class="word-card question">would</div>
+        </div>
+    </div>
+
+    <div class="card-section">
+        <div class="section-title">⚫ PUNCTUATION</div>
+        <div class="cards-grid">
+            <div class="word-card punctuation">.</div>
+            <div class="word-card punctuation">?</div>
+            <div class="word-card punctuation">!</div>
+        </div>
+    </div>
+
+    <div class="sample-sentences">
+        <h3>🎯 Sample Correct Sentences Teams Can Make:</h3>
+        <div class="sample-sentence">• I go to school every day.</div>
+        <div class="sample-sentence">• She likes pizza.</div>
+        <div class="sample-sentence">• We played at the park.</div>
+        <div class="sample-sentence">• Where do you live?</div>
+        <div class="sample-sentence">• My teacher is nice.</div>
+        <div class="sample-sentence">• They have new books.</div>
+        <div class="sample-sentence">• What did you eat?</div>
+        <div class="sample-sentence">• The cat was happy.</div>
+    </div>
+
+    <div style="page-break-before: always; text-align: center; padding: 40px;">
+        <h2>📋 Teacher Instructions</h2>
+        <div style="text-align: left; max-width: 600px; margin: 0 auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            <h3>🎮 Game Setup:</h3>
+            <p><strong>📋 Cutting Instructions:</strong></p>
+            <p>• Print on cardstock for durability</p>
+            <p>• Use a paper cutter for straight lines</p>
+            <p>• Cards are perfect squares (100px x 100px)</p>
+            <p>• Store each team's set in separate envelopes</p>
+            <p><strong>2.</strong> Divide class into teams of 2 students (12 teams + 1 team of 3)</p>
+            <p><strong>3.</strong> Give each team one complete set of cards (about 20-25 cards per team)</p>
+            <p><strong>4.</strong> Teams work at their desks or on the floor</p>
+            
+            <h3>🏃‍♂️ How to Play:</h3>
+            <p><strong>Round 1:</strong> "Make any correct sentence!" (2 minutes)</p>
+            <p><strong>Round 2:</strong> "Make a question!" (3 minutes)</p>
+            <p><strong>Round 3:</strong> "Make a past tense sentence!" (3 minutes)</p>
+            <p><strong>Round 4:</strong> "Use an adjective!" (2 minutes)</p>
+            <p><strong>Round 5:</strong> "Make the longest sentence possible!" (4 minutes)</p>
+            
+            <h3>🏆 Scoring:</h3>
+            <p>• <strong>Correct grammar:</strong> 3 points</p>
+            <p>• <strong>First 3 teams done:</strong> +3, +2, +1 bonus points</p>
+            <p>• <strong>Creative/long sentences:</strong> +1 bonus point</p>
+            
+            <h3>📋 Teacher Tips:</h3>
+            <p>• <strong>Preparation:</strong> Make 13 complete sets of cards (one per team)</p>
+            <p>• <strong>Management:</strong> Use a timer and whistle for excitement</p>
+            <p>• <strong>Check answers:</strong> Walk around and verify sentences quickly</p>
+            <p>• <strong>Differentiation:</strong> Give struggling teams easier challenge cards</p>
+            
+            <h3>📝 Grammar Focus:</h3>
+            <p>• Subject-verb agreement (I go / She goes)</p>
+            <p>• Past tense forms (played, went, ate)</p>
+            <p>• Question formation (Where do you...?)</p>
+            <p>• Plural nouns (book/books)</p>
+            <p>• Sentence structure and word order</p>
+        </div>
+    </div>
+</body>
+</html>
